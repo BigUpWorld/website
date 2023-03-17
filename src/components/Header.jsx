@@ -50,11 +50,8 @@ export function Header() {
                 <Container className="relative z-50 flex justify-between py-8">
                     <div className="relative z-10 flex items-center gap-16">
                         <Link href="/" aria-label="Home">
-                            <Logo className="h-10 w-auto"/>
+                            <Logo className="h-20 w-auto"/>
                         </Link>
-                        <div className="hidden lg:flex lg:gap-10">
-                            <NavLinks/>
-                        </div>
                     </div>
                     <div className="flex items-center gap-6">
                         <Popover className="lg:hidden">
@@ -96,15 +93,6 @@ export function Header() {
                                                     className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                                                 >
                                                     <div className="space-y-4">
-                                                        <MobileNavLink href="#features">
-                                                            Features
-                                                        </MobileNavLink>
-                                                        <MobileNavLink href="#reviews">
-                                                            Reviews
-                                                        </MobileNavLink>
-                                                        <MobileNavLink href="#pricing">
-                                                            Pricing
-                                                        </MobileNavLink>
                                                         <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                                                     </div>
                                                 </Popover.Panel>

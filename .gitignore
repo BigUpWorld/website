@@ -30,3 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#Ooutput
+_static
+.idea

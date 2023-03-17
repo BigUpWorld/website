@@ -245,94 +245,7 @@ function Chart({
 }
 
 function AppDemo() {
-    let [activePointIndex, setActivePointIndex] = useState(null)
-    let activePriceIndex = activePointIndex ?? prices.length - 1
-    let activeValue = prices[activePriceIndex]
-    let previousValue = prices[activePriceIndex - 1]
-    let percentageChange =
-        activePriceIndex === 0
-            ? null
-            : ((activeValue - previousValue) / previousValue) * 100
-
-    return (
-        <AppScreen>
-            <AppScreen.Body>
-                <div className="p-4">
-                    <div className="flex gap-2">
-                        <div className="text-xs leading-6 text-gray-500">
-                            Tailwind Labs, Inc.
-                        </div>
-                        <div className="text-sm text-gray-900">$CSS</div>
-                        <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none">
-                            <path
-                                d="M5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0ZM12 9v6M15 12H9"
-                                stroke="#171717"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </div>
-                    <div className="mt-3 border-t border-gray-200 pt-5">
-                        <div className="flex items-baseline gap-2">
-                            <div className="text-2xl tabular-nums tracking-tight text-gray-900">
-                                {activeValue.toFixed(2)}
-                            </div>
-                            <div className="text-sm text-gray-900">USD</div>
-                            {percentageChange && (
-                                <div
-                                    className={clsx(
-                                        'ml-auto text-sm tabular-nums tracking-tight',
-                                        percentageChange >= 0 ? 'text-cyan-500' : 'text-gray-500'
-                                    )}
-                                >
-                                    {`${
-                                        percentageChange >= 0 ? '+' : ''
-                                    }${percentageChange.toFixed(2)}%`}
-                                </div>
-                            )}
-                        </div>
-                        <div className="mt-6 flex gap-4 text-xs text-gray-500">
-                            <div>1D</div>
-                            <div>5D</div>
-                            <div className="font-semibold text-cyan-600">1M</div>
-                            <div>6M</div>
-                            <div>1Y</div>
-                            <div>5Y</div>
-                        </div>
-                        <div className="mt-3 rounded-lg bg-gray-50 ring-1 ring-inset ring-black/5">
-                            <Chart
-                                width={286}
-                                height={208}
-                                paddingX={16}
-                                paddingY={32}
-                                activePointIndex={activePointIndex}
-                                onChangeActivePointIndex={setActivePointIndex}
-                            />
-                        </div>
-                        <div
-                            className="mt-4 rounded-lg bg-cyan-500 py-2 px-4 text-center text-sm font-semibold text-white">
-                            Trade
-                        </div>
-                        <div className="mt-3 divide-y divide-gray-100 text-sm">
-                            <div className="flex justify-between py-1">
-                                <div className="text-gray-500">Open</div>
-                                <div className="font-medium text-gray-900">6,387.55</div>
-                            </div>
-                            <div className="flex justify-between py-1">
-                                <div className="text-gray-500">Closed</div>
-                                <div className="font-medium text-gray-900">6,487.09</div>
-                            </div>
-                            <div className="flex justify-between py-1">
-                                <div className="text-gray-500">Low</div>
-                                <div className="font-medium text-gray-900">6,322.01</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </AppScreen.Body>
-        </AppScreen>
-    )
+    return (<Image src={require("../../public/app.png")} alt={"App demo image"}></Image>)
 }
 
 export function Hero() {
@@ -346,8 +259,8 @@ export function Hero() {
                         </h1>
                         <p className="mt-6 text-lg text-gray-600">
                             Discover a safe and uplifting social media platform designed to celebrate the best in
-                            everyone. With Big Up, we're on a mission to help teens and young adults in the UK foster a
-                            kinder and more supportive online environment, one 'Big Up' at a time.
+                            everyone. With Big Up, we&apos;re on a mission to help teens and young adults in the UK foster a
+                            kinder and more supportive online environment, one &quot;Big Up&quot; at a time.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
                             <AppStoreLink/>
