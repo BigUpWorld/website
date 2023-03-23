@@ -29,6 +29,7 @@ export function Footer() {
               <div className="ml-4">
                 <p className="text-base font-semibold">Big Up</p>
                 <p className="mt-1 text-sm">The feel good social media app.</p>
+                <p className="mt-1 text-sm">By Mizamu FZ LLE</p>
               </div>
             </div>
             <nav className="mt-11 flex gap-8">
@@ -69,7 +70,7 @@ export function Footer() {
             </Button>
           </form>
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
-            &copy; Copyright {new Date().getFullYear()}. All rights reserved.
+            &copy; Copyright {new Date().getFullYear()}. Mizamu FZ LLE. All rights reserved.
           </p>
         </div>
       </Container>

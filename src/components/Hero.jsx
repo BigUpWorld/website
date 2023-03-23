@@ -258,19 +258,14 @@ export function Hero() {
                             Unlock a World of Positivity with Big Up – The Feel-Good Social Media App!
                         </h1>
                         <p className="mt-6 text-lg text-gray-600">
-                            Discover a safe and uplifting social media platform designed to celebrate the best in
-                            everyone. With Big Up, we&apos;re on a mission to help teens and young adults in the UK foster a
+                            Mizamu FZ is proud to announce our new social media app. Discover a safe and uplifting
+                            social media platform designed to celebrate the best in
+                            everyone. With Big Up, we&apos;re on a mission to help teens and young adults in the UK
+                            foster a
                             kinder and more supportive online environment, one &quot;Big Up&quot; at a time.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
                             <AppStoreLink/>
-                            <Button
-                                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                                variant="outline"
-                            >
-                                <PlayIcon className="h-6 w-6 flex-none"/>
-                                <span className="ml-2.5">Watch the video</span>
-                            </Button>
                         </div>
                     </div>
                     <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
