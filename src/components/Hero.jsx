@@ -2,20 +2,9 @@ import {useId, useRef, useState} from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import {motion, useInView, useMotionValue} from 'framer-motion'
-
-import {AppScreen} from '@/components/AppScreen'
 import {AppStoreLink} from '@/components/AppStoreLink'
-import {Button} from '@/components/Button'
 import {Container} from '@/components/Container'
 import {PhoneFrame} from '@/components/PhoneFrame'
-import logoBbc from '@/images/logos/bbc.svg'
-import logoCbs from '@/images/logos/cbs.svg'
-import logoCnn from '@/images/logos/cnn.svg'
-import logoFastCompany from '@/images/logos/fast-company.svg'
-import logoForbes from '@/images/logos/forbes.svg'
-import logoHuffpost from '@/images/logos/huffpost.svg'
-import logoTechcrunch from '@/images/logos/techcrunch.svg'
-import logoWired from '@/images/logos/wired.svg'
 
 function BackgroundIllustration(props) {
     let id = useId()
@@ -264,8 +253,14 @@ export function Hero() {
                             foster a
                             kinder and more supportive online environment, one &quot;Big Up&quot; at a time.
                         </p>
-                        <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+                        <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4 items-center">
                             <AppStoreLink/>
+                            <a href='https://play.google.com/store/apps/details?id=com.bigupapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                                <img
+                                    alt='Get it on Google Play'
+                                    width={160}
+                                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+                            </a>
                         </div>
                     </div>
                     <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
