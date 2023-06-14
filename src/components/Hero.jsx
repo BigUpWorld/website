@@ -255,7 +255,8 @@ export function Hero() {
                         </p>
                         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4 items-center">
                             <AppStoreLink/>
-                            <a href='https://play.google.com/store/apps/details?id=com.bigupapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                            <a href='https://play.google.com/store/apps/details?id=com.bigupapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                            className={'plausible-event-name=android'}>
                                 <img
                                     alt='Get it on Google Play'
                                     width={160}
